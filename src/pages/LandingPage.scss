@@ -1,0 +1,36 @@
+.landing-page {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f8fafc;
+}
+
+/* Common section spacing */
+.landing-page section {
+  padding: 80px 60px;
+}
+
+/* Alternate section backgrounds */
+.landing-page section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.landing-page section:nth-child(odd) {
+  background-color: #f8fafc;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .landing-page section {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-page section {
+    padding: 50px 20px;
+  }
+ 
+}
+ html {
+  scroll-behavior: smooth;
+}

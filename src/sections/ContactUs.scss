@@ -1,0 +1,104 @@
+.contact {
+  padding: 80px 20px;
+  background: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__container {
+  width: 100%;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+/* FORM */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* FORM GROUP */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+}
+
+/* INPUTS */
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease-in-out;
+  background: #fff;
+
+  &:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+  }
+}
+
+/* TEXTAREA */
+textarea.input {
+  resize: none;
+  min-height: 120px;
+}
+
+/* ERROR MESSAGE */
+.error {
+  font-size: 12px;
+  color: #e11d48;
+  margin-top: 2px;
+}
+
+/* MUI BUTTON OVERRIDE */
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  border-radius: 8px !important;
+  background: #1976d2 !important;
+
+  &:hover {
+    background: #125aa3 !important;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .contact__container {
+    padding: 25px;
+  }
+
+  .contact__title {
+    font-size: 22px;
+  }
+}

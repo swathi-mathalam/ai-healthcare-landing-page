@@ -1,0 +1,138 @@
+.footer {
+  background: linear-gradient(135deg, #0b1220, #111c33);
+  color: #e5e7eb;
+  padding: 60px 20px 20px;
+  margin-top: 60px;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Brand */
+  &__brand {
+    .footer__logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #60a5fa; // soft medical blue
+      letter-spacing: 0.5px;
+    }
+
+    .footer__desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+  }
+
+  /* Titles */
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin-bottom: 8px;
+  }
+
+  /* Contact */
+  &__item {
+    font-size: 14px;
+
+    span {
+      font-weight: 600;
+      color: #94a3b8;
+    }
+
+    p {
+      margin: 2px 0 0;
+      color: #e2e8f0;
+    }
+  }
+
+  /* Links */
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 8px;
+
+      a {
+        text-decoration: none;
+        color: #cbd5e1;
+        font-size: 14px;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: #60a5fa;
+          transform: translateX(4px);
+        }
+      }
+    }
+  }
+
+  /* Social */
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    a {
+      text-decoration: none;
+      color: #cbd5e1;
+      font-size: 14px;
+      transition: 0.3s ease;
+
+      &:hover {
+        color: #38bdf8;
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  /* Bottom */
+  &__bottom {
+    margin-top: 40px;
+    border-top: 1px solid #1f2a44;
+    text-align: center;
+    padding-top: 15px;
+
+    p {
+      font-size: 13px;
+      color: #94a3b8;
+    }
+  }
+}
+
+/* 📱 Tablet */
+@media (max-width: 992px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .footer {
+    padding: 40px 15px 20px;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer__bottom p {
+    font-size: 12px;
+  }
+}

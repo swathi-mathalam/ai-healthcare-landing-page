@@ -1,0 +1,91 @@
+.newsletter {
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #1a73e8, #2563eb);
+  color: white;
+}
+
+/* Center container */
+.newsletter__container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Card */
+.newsletter__box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Text */
+.newsletter__text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.newsletter__text p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Form */
+.newsletter__form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Input */
+.newsletter__form input {
+  padding: 14px 16px;
+  width: 280px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Button */
+.newsletter__form button {
+  padding: 14px 20px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter__form button:hover {
+  background: #111c33;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .newsletter__box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter__form input {
+    width: 100%;
+  }
+
+  .newsletter__form button {
+    width: 100%;
+  }
+}

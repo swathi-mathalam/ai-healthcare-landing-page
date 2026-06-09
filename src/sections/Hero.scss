@@ -1,0 +1,86 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #f0f9ff, #ffffff);
+  min-height: 90vh;
+  gap: 40px;
+}
+
+/* LEFT CONTENT */
+.hero__content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero__content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero__content p {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* BUTTON (from your component) */
+.hero__content button {
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero__content button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3);
+}
+
+/* IMAGE SECTION */
+.hero__image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__image img {
+  width: 100%;
+  max-width: 550px;   /* increased from 500px */
+  height: 420px;      /* 👈 add this */
+  object-fit: cover;  /* keeps image nicely cropped */
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+  transition: 0.4s ease;
+}
+
+.hero__image img:hover {
+  transform: scale(1.03);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero__content h1 {
+    font-size: 34px;
+  }
+
+  .hero__image img {
+    max-width: 90%;
+  }
+}
