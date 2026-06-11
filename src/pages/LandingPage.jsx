@@ -51,14 +51,14 @@ const LandingPage = () => {
 
                 setError(
                     "Failed to load data"
-                );
+                ); 
             } finally {
                 setLoading(false);
             }
         };
 
-    if (!data?.length) {
-  return <div>Loading...</div>;
+    if (loading) {
+   return <Loader />;
 }
 
     if (error) {
@@ -172,4 +172,4 @@ const LandingPage = () => {
 );
 };
 
-export default LandingPage;
+export default LandingPage; 
