@@ -8,7 +8,7 @@ const Statistics = ({ data }) => {
         {data?.map((item) => (
           <div
             className="statistics__card"
-            key={item.id}
+            key={item.id} 
           >
             <h3>{item.value}</h3>
             <p>{item.label}</p>
